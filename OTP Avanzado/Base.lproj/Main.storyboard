@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zwp-hO-AZS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Prezi-->
+        <scene sceneID="7At-yS-38M">
+            <objects>
+                <viewController id="M8x-mL-z0L" customClass="PreziVC" customModule="OTP_Avanzado" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PuZ-X8-mZD"/>
+                        <viewControllerLayoutGuide type="bottom" id="4C4-Zt-74C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="poj-fx-Fnh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nf-gd-s95">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9nf-gd-s95" secondAttribute="trailing" id="4cj-1x-5jQ"/>
+                            <constraint firstItem="9nf-gd-s95" firstAttribute="top" secondItem="PuZ-X8-mZD" secondAttribute="bottom" id="TLm-VD-wo2"/>
+                            <constraint firstItem="9nf-gd-s95" firstAttribute="leading" secondItem="poj-fx-Fnh" secondAttribute="leading" id="VBb-eF-bMK"/>
+                            <constraint firstItem="4C4-Zt-74C" firstAttribute="top" secondItem="9nf-gd-s95" secondAttribute="bottom" id="h3a-xJ-IfB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Prezi" id="p92-oW-ep8"/>
+                    <connections>
+                        <outlet property="vistaweb" destination="9nf-gd-s95" id="aBm-ga-klz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hep-i7-EFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="-956"/>
+        </scene>
+        <!--OTP-->
+        <scene sceneID="0Y3-J4-M04">
+            <objects>
+                <viewController id="12h-G8-AyT" customClass="OperativaVC" customModule="OTP_Avanzado" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EHT-73-RIz"/>
+                        <viewControllerLayoutGuide type="bottom" id="xEe-X1-0ho"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UOD-jE-hzn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y9W-48-Yhz">
+                                <rect key="frame" x="20" y="72" width="560" height="29"/>
+                                <segments>
+                                    <segment title="¿Qué es OTP?"/>
+                                    <segment title="¿Dónde inicia?"/>
+                                    <segment title="Objetivos"/>
+                                </segments>
+                                <connections>
+                                    <action selector="cambiarSeccion:" destination="12h-G8-AyT" eventType="valueChanged" id="Iqm-BQ-Nr9"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wa-To-0mn">
+                                <rect key="frame" x="203" y="108" width="194" height="30"/>
+                                <state key="normal" title="-&gt; Ir a presentación Prezi &lt;-"/>
+                                <connections>
+                                    <segue destination="M8x-mL-z0L" kind="show" id="Sah-dv-4uj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ce-Bx-3rq">
+                                <rect key="frame" x="20" y="146" width="560" height="213"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lI-If-ewY">
+                                <rect key="frame" x="20" y="367" width="560" height="213"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="5lI-If-ewY" secondAttribute="trailing" id="0TP-Xp-pfq"/>
+                            <constraint firstItem="xEe-X1-0ho" firstAttribute="top" secondItem="5lI-If-ewY" secondAttribute="bottom" constant="20" id="1Db-M9-tvD"/>
+                            <constraint firstItem="y9W-48-Yhz" firstAttribute="trailing" secondItem="UOD-jE-hzn" secondAttribute="trailingMargin" id="7gH-3U-r6h"/>
+                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="top" secondItem="3Wa-To-0mn" secondAttribute="bottom" constant="8" id="Add-D2-YMM"/>
+                            <constraint firstItem="3Wa-To-0mn" firstAttribute="centerX" secondItem="UOD-jE-hzn" secondAttribute="centerX" id="DTs-BL-zk3"/>
+                            <constraint firstItem="y9W-48-Yhz" firstAttribute="leading" secondItem="UOD-jE-hzn" secondAttribute="leadingMargin" id="Qci-ZL-56g"/>
+                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="leading" secondItem="UOD-jE-hzn" secondAttribute="leadingMargin" id="Vq5-co-Twz"/>
+                            <constraint firstItem="3Wa-To-0mn" firstAttribute="top" secondItem="y9W-48-Yhz" secondAttribute="bottom" constant="8" id="Y60-kb-d6w"/>
+                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="trailing" secondItem="UOD-jE-hzn" secondAttribute="trailingMargin" id="ZPQ-nw-vfw"/>
+                            <constraint firstItem="5lI-If-ewY" firstAttribute="top" secondItem="3ce-Bx-3rq" secondAttribute="bottom" constant="8" id="b8P-Kj-Or0"/>
+                            <constraint firstItem="5lI-If-ewY" firstAttribute="leading" secondItem="UOD-jE-hzn" secondAttribute="leadingMargin" id="dmV-NO-JrE"/>
+                            <constraint firstItem="5lI-If-ewY" firstAttribute="top" secondItem="3ce-Bx-3rq" secondAttribute="bottom" constant="8" id="eJM-Bt-heS"/>
+                            <constraint firstItem="5lI-If-ewY" firstAttribute="height" secondItem="3ce-Bx-3rq" secondAttribute="height" id="kOV-pY-3EK"/>
+                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="top" secondItem="3Wa-To-0mn" secondAttribute="bottom" constant="8" id="kwH-zk-jvt"/>
+                            <constraint firstItem="3Wa-To-0mn" firstAttribute="top" secondItem="y9W-48-Yhz" secondAttribute="bottom" constant="8" id="nbB-k5-HKC"/>
+                            <constraint firstItem="y9W-48-Yhz" firstAttribute="top" secondItem="EHT-73-RIz" secondAttribute="bottom" constant="8" id="wjb-xu-0eh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="OTP" id="APY-ic-1tN"/>
+                    <connections>
+                        <outlet property="controller" destination="y9W-48-Yhz" id="1ca-fU-kau"/>
+                        <outlet property="imagen" destination="3ce-Bx-3rq" id="2XQ-pr-dYT"/>
+                        <outlet property="texto" destination="5lI-If-ewY" id="xAa-Cn-TTW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDL-WP-Klh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="-291"/>
+        </scene>
+        <!--OTP Avanzado-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InicioVC" customModule="OTP_Avanzado" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kk-dh-L6M">
+                                <rect key="frame" x="20" y="72" width="295" height="206"/>
+                                <state key="normal" image="OTP fondo negro"/>
+                                <connections>
+                                    <segue destination="12h-G8-AyT" kind="show" id="9FJ-xb-cOj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6v3-07-M2y">
+                                <rect key="frame" x="20" y="286" width="187" height="206"/>
+                                <state key="normal" title="Ante agresiones físicas"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTi-Lg-YY5">
+                                <rect key="frame" x="20" y="500" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="dGu-dO-PNu"/>
+                                    <constraint firstAttribute="width" constant="80" id="x28-Dq-mAZ"/>
+                                </constraints>
+                                <state key="normal" image="website"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uma-t3-3Dc">
+                                <rect key="frame" x="153" y="500" width="295" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="zjs-uj-cuV"/>
+                                </constraints>
+                                <state key="normal" image="OTP fondo negro"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zs1-1t-KLP">
+                                <rect key="frame" x="500" y="500" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Pay-aj-GC9"/>
+                                    <constraint firstAttribute="width" constant="80" id="erG-DJ-k3K"/>
+                                </constraints>
+                                <state key="normal" image="correo"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfW-q4-oIQ">
+                                <rect key="frame" x="285" y="72" width="295" height="206"/>
+                                <state key="normal" image="MasterJCVera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqD-NV-00h">
+                                <rect key="frame" x="393" y="286" width="187" height="206"/>
+                                <state key="normal" title="Desarmes">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6v3-07-M2y" firstAttribute="top" secondItem="5Kk-dh-L6M" secondAttribute="bottom" constant="8" id="048-nN-zr8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zs1-1t-KLP" secondAttribute="bottom" constant="20" id="1sT-rh-go1"/>
+                            <constraint firstItem="OfW-q4-oIQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3xa-l9-2Iu"/>
+                            <constraint firstItem="OTi-Lg-YY5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4Ks-2E-ubB"/>
+                            <constraint firstItem="OfW-q4-oIQ" firstAttribute="width" secondItem="5Kk-dh-L6M" secondAttribute="width" id="7OF-ge-dPS"/>
+                            <constraint firstItem="OfW-q4-oIQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AFn-cq-HXP"/>
+                            <constraint firstItem="uma-t3-3Dc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B9S-pc-lNy"/>
+                            <constraint firstItem="6v3-07-M2y" firstAttribute="top" secondItem="5Kk-dh-L6M" secondAttribute="bottom" constant="8" id="IYD-m0-hzg"/>
+                            <constraint firstItem="SqD-NV-00h" firstAttribute="width" secondItem="6v3-07-M2y" secondAttribute="width" id="Iug-6w-i4f"/>
+                            <constraint firstItem="5Kk-dh-L6M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Jeo-6I-gXW"/>
+                            <constraint firstItem="zs1-1t-KLP" firstAttribute="top" secondItem="SqD-NV-00h" secondAttribute="bottom" constant="8" id="MpV-os-is1"/>
+                            <constraint firstItem="5Kk-dh-L6M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nom-e5-Y3m"/>
+                            <constraint firstItem="SqD-NV-00h" firstAttribute="top" secondItem="OfW-q4-oIQ" secondAttribute="bottom" constant="8" id="Pht-mE-3wA"/>
+                            <constraint firstItem="6v3-07-M2y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Pul-PK-8As"/>
+                            <constraint firstItem="SqD-NV-00h" firstAttribute="height" secondItem="6v3-07-M2y" secondAttribute="height" id="TyI-TA-2Qr"/>
+                            <constraint firstItem="OfW-q4-oIQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UYM-Xh-ZOa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OTi-Lg-YY5" secondAttribute="bottom" constant="20" id="WY0-mc-dvJ"/>
+                            <constraint firstItem="zs1-1t-KLP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Wh2-vi-vec"/>
+                            <constraint firstItem="6v3-07-M2y" firstAttribute="height" secondItem="5Kk-dh-L6M" secondAttribute="height" id="YuP-LW-l7w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uma-t3-3Dc" secondAttribute="bottom" constant="20" id="aJz-CD-jUm"/>
+                            <constraint firstItem="OTi-Lg-YY5" firstAttribute="top" secondItem="6v3-07-M2y" secondAttribute="bottom" constant="8" id="cUF-o9-w8M"/>
+                            <constraint firstItem="5Kk-dh-L6M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ehA-rs-9qR"/>
+                            <constraint firstItem="OfW-q4-oIQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="fWN-1h-dPk"/>
+                            <constraint firstItem="SqD-NV-00h" firstAttribute="top" secondItem="OfW-q4-oIQ" secondAttribute="bottom" constant="8" id="j0G-w4-AeU"/>
+                            <constraint firstItem="5Kk-dh-L6M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="qJR-kl-EFJ"/>
+                            <constraint firstItem="OfW-q4-oIQ" firstAttribute="height" secondItem="5Kk-dh-L6M" secondAttribute="height" id="sCQ-jO-RcP"/>
+                            <constraint firstItem="SqD-NV-00h" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vHe-k5-v97"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="OTP Avanzado" id="5Yb-Rj-nwT">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="n9h-pC-Gft"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vyb-rw-8XL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zwp-hO-AZS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h9B-Gu-9P0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zoe-T6-3yc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5U-DD-puX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MasterJCVera" width="133" height="166"/>
+        <image name="OTP fondo negro" width="295" height="175"/>
+        <image name="correo" width="133" height="133"/>
+        <image name="website" width="170" height="170"/>
+    </resources>
+</document>
