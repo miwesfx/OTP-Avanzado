@@ -18,6 +18,8 @@
 		49CE005A1CDCAD6B00595C9A /* OperativaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE00591CDCAD6B00595C9A /* OperativaVC.swift */; };
 		49CE005C1CDCADD900595C9A /* PreziVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE005B1CDCADD900595C9A /* PreziVC.swift */; };
 		49CE005E1CDCB7FA00595C9A /* MasterVeraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE005D1CDCB7FA00595C9A /* MasterVeraVC.swift */; };
+		B94852271CDCC8B00054C239 /* CorreoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94852261CDCC8B00054C239 /* CorreoVC.swift */; };
+		B94852291CDCCB660054C239 /* VideosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94852281CDCCB660054C239 /* VideosVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		49CE00591CDCAD6B00595C9A /* OperativaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperativaVC.swift; sourceTree = "<group>"; };
 		49CE005B1CDCADD900595C9A /* PreziVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreziVC.swift; sourceTree = "<group>"; };
 		49CE005D1CDCB7FA00595C9A /* MasterVeraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterVeraVC.swift; sourceTree = "<group>"; };
+		B94852261CDCC8B00054C239 /* CorreoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorreoVC.swift; sourceTree = "<group>"; };
+		B94852281CDCCB660054C239 /* VideosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 		49CE00581CDCAD4400595C9A /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B94852281CDCCB660054C239 /* VideosVC.swift */,
+				B94852261CDCC8B00054C239 /* CorreoVC.swift */,
 				49CE005D1CDCB7FA00595C9A /* MasterVeraVC.swift */,
 				49CE005B1CDCADD900595C9A /* PreziVC.swift */,
 				49CE00591CDCAD6B00595C9A /* OperativaVC.swift */,
@@ -282,8 +288,10 @@
 				494A94001CCD463700C17282 /* InicioVC.swift in Sources */,
 				494A93D21CCD3FA800C17282 /* ViewController.swift in Sources */,
 				494A93D01CCD3FA800C17282 /* AppDelegate.swift in Sources */,
+				B94852291CDCCB660054C239 /* VideosVC.swift in Sources */,
 				49CE005E1CDCB7FA00595C9A /* MasterVeraVC.swift in Sources */,
 				49CE005C1CDCADD900595C9A /* PreziVC.swift in Sources */,
+				B94852271CDCC8B00054C239 /* CorreoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
