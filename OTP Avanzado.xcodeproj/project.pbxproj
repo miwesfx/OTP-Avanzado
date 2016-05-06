@@ -20,6 +20,8 @@
 		49CE005E1CDCB7FA00595C9A /* MasterVeraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE005D1CDCB7FA00595C9A /* MasterVeraVC.swift */; };
 		B94852271CDCC8B00054C239 /* CorreoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94852261CDCC8B00054C239 /* CorreoVC.swift */; };
 		B94852291CDCCB660054C239 /* VideosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94852281CDCCB660054C239 /* VideosVC.swift */; };
+		B948522B1CDCCD300054C239 /* AgresionesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B948522A1CDCCD300054C239 /* AgresionesVC.swift */; };
+		B948522D1CDCCD980054C239 /* DesarmesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B948522C1CDCCD980054C239 /* DesarmesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		49CE005D1CDCB7FA00595C9A /* MasterVeraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterVeraVC.swift; sourceTree = "<group>"; };
 		B94852261CDCC8B00054C239 /* CorreoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorreoVC.swift; sourceTree = "<group>"; };
 		B94852281CDCCB660054C239 /* VideosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosVC.swift; sourceTree = "<group>"; };
+		B948522A1CDCCD300054C239 /* AgresionesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgresionesVC.swift; sourceTree = "<group>"; };
+		B948522C1CDCCD980054C239 /* DesarmesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesarmesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 		49CE00581CDCAD4400595C9A /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B948522C1CDCCD980054C239 /* DesarmesVC.swift */,
+				B948522A1CDCCD300054C239 /* AgresionesVC.swift */,
 				B94852281CDCCB660054C239 /* VideosVC.swift */,
 				B94852261CDCC8B00054C239 /* CorreoVC.swift */,
 				49CE005D1CDCB7FA00595C9A /* MasterVeraVC.swift */,
@@ -284,9 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B948522D1CDCCD980054C239 /* DesarmesVC.swift in Sources */,
 				49CE005A1CDCAD6B00595C9A /* OperativaVC.swift in Sources */,
 				494A94001CCD463700C17282 /* InicioVC.swift in Sources */,
 				494A93D21CCD3FA800C17282 /* ViewController.swift in Sources */,
+				B948522B1CDCCD300054C239 /* AgresionesVC.swift in Sources */,
 				494A93D01CCD3FA800C17282 /* AppDelegate.swift in Sources */,
 				B94852291CDCCB660054C239 /* VideosVC.swift in Sources */,
 				49CE005E1CDCB7FA00595C9A /* MasterVeraVC.swift in Sources */,
