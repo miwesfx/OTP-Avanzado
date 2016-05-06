@@ -162,6 +162,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfW-q4-oIQ">
                                 <rect key="frame" x="285" y="72" width="295" height="206"/>
                                 <state key="normal" image="MasterJCVera"/>
+                                <connections>
+                                    <segue destination="kuw-LR-dgT" kind="show" id="6xo-Cj-6aW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqD-NV-00h">
                                 <rect key="frame" x="393" y="286" width="187" height="206"/>
@@ -208,6 +211,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1252" y="387"/>
+        </scene>
+        <!--Máster J.C.Vera-->
+        <scene sceneID="hRk-OT-fP1">
+            <objects>
+                <viewController id="kuw-LR-dgT" customClass="MasterVeraVC" customModule="OTP_Avanzado" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aEp-eA-jIk"/>
+                        <viewControllerLayoutGuide type="bottom" id="8dY-LR-Nbx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JdS-5F-Qvy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Máster J.C.Vera" id="cjr-VS-k7G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWU-nM-wFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vyb-rw-8XL">
