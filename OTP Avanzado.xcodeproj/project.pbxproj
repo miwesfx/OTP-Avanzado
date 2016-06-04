@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4938DE991CE0C2B300B1D529 /* Trailer_otp.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4938DE981CE0C2B300B1D529 /* Trailer_otp.mov */; };
 		494A93D01CCD3FA800C17282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A93CF1CCD3FA800C17282 /* AppDelegate.swift */; };
 		494A93D21CCD3FA800C17282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A93D11CCD3FA800C17282 /* ViewController.swift */; };
 		494A93D51CCD3FA800C17282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494A93D31CCD3FA800C17282 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4938DE981CE0C2B300B1D529 /* Trailer_otp.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = Trailer_otp.mov; path = ../../OTP/Trailer_otp.mov; sourceTree = "<group>"; };
 		494A93CC1CCD3FA800C17282 /* OTP Avanzado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OTP Avanzado.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A93CF1CCD3FA800C17282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		494A93D11CCD3FA800C17282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		49CE00581CDCAD4400595C9A /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4938DE981CE0C2B300B1D529 /* Trailer_otp.mov */,
 				B948522C1CDCCD980054C239 /* DesarmesVC.swift */,
 				B948522A1CDCCD300054C239 /* AgresionesVC.swift */,
 				B94852281CDCCB660054C239 /* VideosVC.swift */,
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4938DE991CE0C2B300B1D529 /* Trailer_otp.mov in Resources */,
 				494A93DA1CCD3FA800C17282 /* LaunchScreen.storyboard in Resources */,
 				494A93D71CCD3FA800C17282 /* Assets.xcassets in Resources */,
 				494A93D51CCD3FA800C17282 /* Main.storyboard in Resources */,

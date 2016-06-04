@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zwp-hO-AZS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zwp-hO-AZS">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -70,36 +70,38 @@
                                     <segue destination="M8x-mL-z0L" kind="show" id="Sah-dv-4uj"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ce-Bx-3rq">
-                                <rect key="frame" x="20" y="146" width="560" height="213"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lI-If-ewY">
-                                <rect key="frame" x="20" y="367" width="560" height="213"/>
+                                <rect key="frame" x="20" y="334" width="560" height="246"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ce-Bx-3rq">
+                                <rect key="frame" x="20" y="146" width="560" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="bPO-vr-iP2"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="5lI-If-ewY" secondAttribute="trailing" id="0TP-Xp-pfq"/>
-                            <constraint firstItem="xEe-X1-0ho" firstAttribute="top" secondItem="5lI-If-ewY" secondAttribute="bottom" constant="20" id="1Db-M9-tvD"/>
-                            <constraint firstItem="y9W-48-Yhz" firstAttribute="trailing" secondItem="UOD-jE-hzn" secondAttribute="trailingMargin" id="7gH-3U-r6h"/>
-                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="top" secondItem="3Wa-To-0mn" secondAttribute="bottom" constant="8" id="Add-D2-YMM"/>
-                            <constraint firstItem="3Wa-To-0mn" firstAttribute="centerX" secondItem="UOD-jE-hzn" secondAttribute="centerX" id="DTs-BL-zk3"/>
-                            <constraint firstItem="y9W-48-Yhz" firstAttribute="leading" secondItem="UOD-jE-hzn" secondAttribute="leadingMargin" id="Qci-ZL-56g"/>
-                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="leading" secondItem="UOD-jE-hzn" secondAttribute="leadingMargin" id="Vq5-co-Twz"/>
-                            <constraint firstItem="3Wa-To-0mn" firstAttribute="top" secondItem="y9W-48-Yhz" secondAttribute="bottom" constant="8" id="Y60-kb-d6w"/>
-                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="trailing" secondItem="UOD-jE-hzn" secondAttribute="trailingMargin" id="ZPQ-nw-vfw"/>
-                            <constraint firstItem="5lI-If-ewY" firstAttribute="top" secondItem="3ce-Bx-3rq" secondAttribute="bottom" constant="8" id="b8P-Kj-Or0"/>
-                            <constraint firstItem="5lI-If-ewY" firstAttribute="leading" secondItem="UOD-jE-hzn" secondAttribute="leadingMargin" id="dmV-NO-JrE"/>
-                            <constraint firstItem="5lI-If-ewY" firstAttribute="top" secondItem="3ce-Bx-3rq" secondAttribute="bottom" constant="8" id="eJM-Bt-heS"/>
-                            <constraint firstItem="5lI-If-ewY" firstAttribute="height" secondItem="3ce-Bx-3rq" secondAttribute="height" id="kOV-pY-3EK"/>
-                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="top" secondItem="3Wa-To-0mn" secondAttribute="bottom" constant="8" id="kwH-zk-jvt"/>
-                            <constraint firstItem="3Wa-To-0mn" firstAttribute="top" secondItem="y9W-48-Yhz" secondAttribute="bottom" constant="8" id="nbB-k5-HKC"/>
-                            <constraint firstItem="y9W-48-Yhz" firstAttribute="top" secondItem="EHT-73-RIz" secondAttribute="bottom" constant="8" id="wjb-xu-0eh"/>
+                            <constraint firstItem="3Wa-To-0mn" firstAttribute="centerX" secondItem="UOD-jE-hzn" secondAttribute="centerX" id="GNl-R5-sJf"/>
+                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="leading" secondItem="UOD-jE-hzn" secondAttribute="leadingMargin" id="IdS-EK-qNR"/>
+                            <constraint firstItem="xEe-X1-0ho" firstAttribute="top" secondItem="5lI-If-ewY" secondAttribute="bottom" constant="20" id="J6u-5V-oa8"/>
+                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="top" secondItem="3Wa-To-0mn" secondAttribute="bottom" constant="8" id="Lbc-ts-elV"/>
+                            <constraint firstItem="5lI-If-ewY" firstAttribute="leading" secondItem="UOD-jE-hzn" secondAttribute="leadingMargin" id="R1c-cd-Ywm"/>
+                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="top" secondItem="3Wa-To-0mn" secondAttribute="bottom" constant="8" id="Yl4-Ed-ykx"/>
+                            <constraint firstItem="5lI-If-ewY" firstAttribute="trailing" secondItem="UOD-jE-hzn" secondAttribute="trailingMargin" id="c3g-g7-LPB"/>
+                            <constraint firstItem="3Wa-To-0mn" firstAttribute="top" secondItem="y9W-48-Yhz" secondAttribute="bottom" constant="8" id="eBg-KO-RSN"/>
+                            <constraint firstItem="y9W-48-Yhz" firstAttribute="leading" secondItem="UOD-jE-hzn" secondAttribute="leadingMargin" id="ekn-6i-srw"/>
+                            <constraint firstItem="3ce-Bx-3rq" firstAttribute="trailing" secondItem="UOD-jE-hzn" secondAttribute="trailingMargin" id="fMY-Bj-Mkp"/>
+                            <constraint firstItem="y9W-48-Yhz" firstAttribute="top" secondItem="EHT-73-RIz" secondAttribute="bottom" constant="8" id="jtv-XL-Qib"/>
+                            <constraint firstItem="5lI-If-ewY" firstAttribute="top" secondItem="3ce-Bx-3rq" secondAttribute="bottom" constant="8" id="mgj-DL-xDP"/>
+                            <constraint firstItem="y9W-48-Yhz" firstAttribute="trailing" secondItem="UOD-jE-hzn" secondAttribute="trailingMargin" id="nII-LP-0ai"/>
+                            <constraint firstItem="3Wa-To-0mn" firstAttribute="top" secondItem="y9W-48-Yhz" secondAttribute="bottom" constant="8" id="s2k-WE-R9P"/>
+                            <constraint firstItem="5lI-If-ewY" firstAttribute="top" secondItem="3ce-Bx-3rq" secondAttribute="bottom" constant="8" id="wyv-Qd-bWb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="OTP" id="APY-ic-1tN"/>
@@ -134,7 +136,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6v3-07-M2y">
                                 <rect key="frame" x="20" y="286" width="276" height="206"/>
-                                <state key="normal" title="Ante agresiones físicas"/>
+                                <state key="normal" image="ante agresiones menu"/>
                                 <connections>
                                     <segue destination="fOJ-sX-ve9" kind="show" id="3DP-Fu-30T"/>
                                 </connections>
@@ -146,13 +148,19 @@
                                     <constraint firstAttribute="width" constant="80" id="x28-Dq-mAZ"/>
                                 </constraints>
                                 <state key="normal" image="website"/>
+                                <connections>
+                                    <action selector="webButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lgj-eM-wlY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uma-t3-3Dc">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uma-t3-3Dc">
                                 <rect key="frame" x="108" y="500" width="384" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="zjs-uj-cuV"/>
                                 </constraints>
                                 <state key="normal" image="OTP fondo negro"/>
+                                <connections>
+                                    <segue destination="Oau-3B-RM4" kind="showDetail" id="BWx-qQ-XS5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zs1-1t-KLP">
                                 <rect key="frame" x="500" y="500" width="80" height="80"/>
@@ -172,9 +180,9 @@
                                     <segue destination="kuw-LR-dgT" kind="show" id="6xo-Cj-6aW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqD-NV-00h">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqD-NV-00h">
                                 <rect key="frame" x="304" y="286" width="276" height="206"/>
-                                <state key="normal" title="Desarmes">
+                                <state key="normal" image="tecnica desarme menu">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -222,6 +230,15 @@
                     <navigationItem key="navigationItem" title="OTP Avanzado" id="5Yb-Rj-nwT">
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="n9h-pC-Gft"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="agresionesButton" destination="6v3-07-M2y" id="5ZR-RU-XMe"/>
+                        <outlet property="correoButton" destination="zs1-1t-KLP" id="0ay-0j-Cnp"/>
+                        <outlet property="desarmesButton" destination="SqD-NV-00h" id="qSu-vj-2GW"/>
+                        <outlet property="masterButton" destination="OfW-q4-oIQ" id="O5a-tr-YsZ"/>
+                        <outlet property="otpButton" destination="5Kk-dh-L6M" id="PGX-1r-OsT"/>
+                        <outlet property="trailerOtpButton" destination="uma-t3-3Dc" id="nqm-Ux-Z2g"/>
+                        <outlet property="webButton" destination="OTi-Lg-YY5" id="DQK-Tz-t3J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -322,12 +339,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uah-R1-cpP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uah-R1-cpP">
                                 <rect key="frame" x="20" y="72" width="560" height="154"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="154" id="pke-6F-3lQ"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="playMaster"/>
                                 <connections>
                                     <segue destination="Oau-3B-RM4" kind="showDetail" id="UFm-kv-lnE"/>
                                 </connections>
@@ -359,7 +376,7 @@
         <scene sceneID="kth-b4-tLs">
             <objects>
                 <tableViewController id="fOJ-sX-ve9" customClass="AgresionesVC" customModule="OTP_Avanzado" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9VM-jY-ESV">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="9VM-jY-ESV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -367,11 +384,11 @@
                         <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="igQ-ge-716">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="70" id="igQ-ge-716">
+                                <rect key="frame" x="0.0" y="92" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="igQ-ge-716" id="HUk-gi-qjq">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -398,23 +415,23 @@
                 <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Oau-3B-RM4" customClass="VideosVC" customModule="OTP_Avanzado" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4f-eh-WFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2725" y="387"/>
+            <point key="canvasLocation" x="2720" y="387"/>
         </scene>
         <!--Desarmes-->
         <scene sceneID="zyy-At-2LI">
             <objects>
                 <tableViewController id="D39-hL-dgt" customClass="DesarmesVC" customModule="OTP_Avanzado" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JCg-D1-Yv9">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="JCg-D1-Yv9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="8SN-SL-qMA">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="70" id="8SN-SL-qMA">
+                                <rect key="frame" x="0.0" y="92" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8SN-SL-qMA" id="TlZ-KS-6VQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -457,10 +474,13 @@
     <resources>
         <image name="MasterJCVera" width="133" height="166"/>
         <image name="OTP fondo negro" width="295" height="175"/>
+        <image name="ante agresiones menu" width="150" height="150"/>
         <image name="correo" width="133" height="133"/>
+        <image name="playMaster" width="333" height="184"/>
+        <image name="tecnica desarme menu" width="150" height="150"/>
         <image name="website" width="170" height="170"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="f2d-XD-B7q"/>
+        <segue reference="BWx-qQ-XS5"/>
     </inferredMetricsTieBreakers>
 </document>
